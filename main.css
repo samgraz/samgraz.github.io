@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-    font-size: 35px;
+    color: #393939;
+    font-size: 25px;
     font-weight: bold;
     text-align: right;
 }
@@ -26,7 +27,7 @@ p {
 }
 
 i {
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
 }
 
@@ -39,7 +40,7 @@ a:hover {
 }
 
 div.box {
-    margin: 5%;
+    margin: 0% 5% 5% 5%;
 }
 
 div.row {
@@ -47,16 +48,36 @@ div.row {
     flex-wrap: wrap;
 }
 
+div.banner-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #c7c7c7;
+    margin-bottom: 10px;
+}
+
 div.col-40 {
-    margin-top: 20px;
     width: 40%;
+}
+
+div.col-50 {
+    width: 50%;
 }
 
 div.col-60 {
     width: 60%;
 }
 
+.left-pad {
+    margin-left: 10%;
+}
+
+.right-pad {
+    margin-right: 10%;
+}
+
 div.photo-container {
+    padding-top: 20px;
     width: 80%;
     margin: auto;
 }
@@ -66,6 +87,11 @@ div.social {
     text-align: center;
 }
 
+div.social-dev {
+    text-align: left;
+    align-self: auto;
+}
+
 img.photo {
     width: 100%;
     border-radius: 2%;
@@ -73,7 +99,7 @@ img.photo {
     max-width: 400px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
     div.row {
       flex-direction: column;
     }
@@ -83,9 +109,12 @@ img.photo {
     }
 
     h1 {
-        text-align: left;
-        margin-bottom: 0px;
         font-size: 20px;
+    }
+
+    i {
+        font-size: 20px;
+        padding: 10px;
     }
 
     h3 {
