@@ -44,6 +44,7 @@ div.box {
 
 div.row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 div.col-40 {
@@ -57,6 +58,7 @@ div.col-60 {
 
 div.photo-container {
     width: 80%;
+    margin: auto;
 }
 
 div.social {
@@ -68,4 +70,30 @@ img.photo {
     width: 100%;
     border-radius: 2%;
     pointer-events: none;
+    max-width: 400px;
 }
+
+@media screen and (max-width: 600px) {
+    div.row {
+      flex-direction: column;
+    }
+
+    div.col-40, div.col-60 {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    h3 {
+        margin-top: 0px;
+    }
+
+    div.photo-container {
+        width: 50%;
+    }
+    
+  }
